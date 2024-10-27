@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+    printf("enter the radius: \n");
+    int r,p,area,circum;
+  
+    p=3.14;
+    area=p*r*r*;
+    circum=2*p*r;
+     scanf("%d%d%d%d,&r,&p,&area,&circum");
+    printf("the area and circumference are: /n", area, circum);
+    return 0;
+}
