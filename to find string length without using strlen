@@ -1,0 +1,33 @@
+[08:34, 10/29/2024] Kavya Sankar Prasad: // C Program to Calculate the Length of a String without
+// strlen function
+#include <stdio.h>
+
+// Function to calculate the length of a string
+int string_length(char* str)
+{
+    int len = 0;
+
+    // Iterate through the string until the null terminator
+    // is reached
+    while (*str != '\0') {
+        len++;
+        str++;
+    }
+
+    return len;
+}
+
+int main()
+{
+    // Declare and initialize a character array
+    char str[] = "Hello, world!";
+    int length;
+
+    // Calculate the length of the string using the function
+    length = string_length(str);
+
+    // Print the length of the string
+    printf("The length of the string is: %d", length);
+
+    return 0;
+}
